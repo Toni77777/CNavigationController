@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0027AD2826BD2B6C00A4528D /* CNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027AD2726BD2B6C00A4528D /* CNavigationController.swift */; };
+		0027AD2C26BD2BBF00A4528D /* NSViewController+CNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027AD2B26BD2BBF00A4528D /* NSViewController+CNavigationController.swift */; };
 		00C0160626BD298C00313D18 /* CNavigationController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C015FC26BD298C00313D18 /* CNavigationController.framework */; };
 		00C0160B26BD298C00313D18 /* CNavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C0160A26BD298C00313D18 /* CNavigationControllerTests.swift */; };
 		00C0160D26BD298C00313D18 /* CNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 00C015FF26BD298C00313D18 /* CNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0027AD2726BD2B6C00A4528D /* CNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNavigationController.swift; sourceTree = "<group>"; };
+		0027AD2B26BD2BBF00A4528D /* NSViewController+CNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSViewController+CNavigationController.swift"; sourceTree = "<group>"; };
 		00C015FC26BD298C00313D18 /* CNavigationController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CNavigationController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C015FF26BD298C00313D18 /* CNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNavigationController.h; sourceTree = "<group>"; };
 		00C0160026BD298C00313D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 			children = (
 				00C015FF26BD298C00313D18 /* CNavigationController.h */,
 				00C0160026BD298C00313D18 /* Info.plist */,
+				0027AD2726BD2B6C00A4528D /* CNavigationController.swift */,
+				0027AD2B26BD2BBF00A4528D /* NSViewController+CNavigationController.swift */,
 			);
 			path = CNavigationController;
 			sourceTree = "<group>";
@@ -147,6 +153,7 @@
 				TargetAttributes = {
 					00C015FB26BD298C00313D18 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					00C0160426BD298C00313D18 = {
 						CreatedOnToolsVersion = 12.4;
@@ -194,6 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0027AD2826BD2B6C00A4528D /* CNavigationController.swift in Sources */,
+				0027AD2C26BD2BBF00A4528D /* NSViewController+CNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +349,7 @@
 		00C0161126BD298C00313D18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -354,9 +364,11 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = toni77777.CNavigationController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -364,6 +376,7 @@
 		00C0161226BD298C00313D18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -378,6 +391,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = toni77777.CNavigationController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -388,6 +402,7 @@
 		00C0161426BD298C00313D18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
@@ -406,6 +421,7 @@
 		00C0161526BD298C00313D18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 5NVWJ2SDAF;
