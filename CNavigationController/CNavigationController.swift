@@ -45,7 +45,7 @@ open class CNavigationController: NSViewController {
     
     @discardableResult
     func popViewController(animated: Bool) -> NSViewController? {
-        guard let lastViewController = viewControllers.popLast() else { return nil }
+        guard viewControllers.count > 1, let lastViewController = viewControllers.popLast() else { return nil }
         removeEmbedViewController(lastViewController)
         return lastViewController
     }
